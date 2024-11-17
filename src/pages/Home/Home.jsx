@@ -46,9 +46,9 @@ const Home = () => {
   return (
     <div className="mt-[60px] min-h-screen w-full overflow-hidden dark:bg-[#1A3636]">
       <h2 className="text-2xl text-center font-semibold pt-10 dark:text-white">{t("about")}</h2>
-        <div className="flex flex-col justify-center items-center h-full w-full space-y-4 mobile:flex-row p-10 mt-6">
+        <div className="flex flex-col justify-center items-center h-full w-full space-y-4 mobile:flex-row p-0 pr-10 mobile:pr-0 mobile:p-10 mt-6">
             <div className="flex flex-col border rounded-xl bg-green-100">
-                <img src={img_1} className='w-[400px] object-cover hover:scale-105 transition-all duration-300'/>
+                <img src={img_1} className='w-[400px] hidden mobile:block object-cover hover:scale-105 transition-all duration-300'/>
             </div>  
             <div className='flex flex-col border ml-14 rounded-xl min-h-full p-5'>
               <p class="mb-10 max-w-2xl font-Ovo text-center dark:text-white">{t("about-head")}</p>
@@ -82,7 +82,7 @@ const Home = () => {
             <h2 className="text-2xl text-center font-semibold pt-6 dark:text-white">{t("solutions")}</h2>
             <div className='border-1 border-gray-600 mx-20'></div>
             <p className='text-sm mt-20 text-center dark:text-white font-serif'>{t("solutions-head")}</p>
-            <div className="flex flex-col min-h-screen gap-20 mt-8 items-center justify-center md:flex-row">
+            <div className="flex flex-col min-h-screen gap-10 tablet:gap-20 mt-8 items-center justify-center md:flex-row">
           <div className="group h-[400px] w-[300px] [perspective:1000px]">
             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-300  [transform-style:preserve-3d] group-hover:[transform:rotateY(-180deg)]">
               <div className="absolute inset-0">
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='mt-5  mobile:-mt-16 flex justify-center items-center gap-10 text-4xl'>
+        <div className='mt-10 mobile:-mt-16 flex flex-col justify-center items-center mobile:flex-row tablet:flex-row gap-10 text-4xl'>
             <button className='border p-3 rounded-2xl hover:bg-lime-500 transition-all duration-150 dark:text-white'>
               <a href="/">
                 <TbAntennaBars5 />
@@ -191,16 +191,16 @@ const Home = () => {
             </button>
         </div>
         <div className='flex flex-col space-y-8 gap-10 mt-20 min-h-full w-full'>
-            <div className='flex bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
-                <img src={teleImg} className='w-[30%] h-[30%] object-cover hover:scale-90 duration-300 transition-all'/>
+            <div className='flex items-center gap-10 bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
+                <img src={teleImg} className='w-[30%] h-[30%] object-cover hidden mobile:block hover:scale-90 duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white'>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-1-head")}</h2>
                     <p className='break-all font-serif mb-16'>{t("solutions-card-1-text-1")}</p>
                     <p className='break-all font-serif '>{t("solutions-card-1-text-2")}</p>
                 </div>
             </div>  
-            <div className='flex bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
-                <img src={teleImg_2} className='w-[30%] h-[30%] object-cover hover:scale-90 duration-300 transition-all'/>
+            <div className='flex bg-[#88C273] items-center gap-10 rounded-xl mx-5 shadow-xl p-2'>
+                <img src={teleImg_2} className='w-[30%] h-[30%] hidden mobile:block object-cover hover:scale-90 duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white'>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-2-head")}</h2>
                     <p className='break-all font-serif mb-16'>{t("solutions-card-2-text-1")}</p>
@@ -213,8 +213,8 @@ const Home = () => {
                     </ul>
                 </div>
             </div>  
-            <div className='flex bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
-                <img src={teleImg_3} className='w-[30%] h-[30%] object-cover hover:scale-90  duration-300 transition-all'/>
+            <div className='flex items-center gap-10 bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
+                <img src={teleImg_3} className='w-[30%] h-[30%] hidden mobile:block object-cover hover:scale-90  duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white '>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-3-head")}</h2>
                     <p className='break-all font-serif mb-16'>{t("solutions-card-3-text-1")}</p>
@@ -225,10 +225,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-20 min-h-full w-full flex flex-col justify-center items-center dark:text-white gap-1'>
-          <h2 className='text-4xl font-Outfit font-bold mb-10'>{t("services")}</h2>
+      <div className='mt-20 min-h-full w-full flex flex-col justify-center items-center dark:text-white gap-2'>
+          <h2 className='text-4xl text-center font-Outfit font-bold mb-10'>{t("services")}</h2>
           <div className='border w-[100px] border-gray-600 mb-10'></div>
-          <p className='break-all font-serif'>{t("services-head")}</p>
+          <p className='break-all font-serif text-nowrap'>{t("services-head")}</p>
             {
                 countries.map((country) => (
                   <div key={country.id} className='h-full w-full flex items-center mt-10 gap-2 shadow-xl p-12 bg-[#88C273] rounded-2xl'>

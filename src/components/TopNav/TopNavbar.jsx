@@ -217,11 +217,11 @@ const TopNavbar = () => {
       </div>
       
       {toggle && (
-        <div className="border min-w-full h-[230px] block laptop:hidden">
+        <div className="min-w-full h-[230px] block laptop:hidden">
           <ul className="flex flex-col items-center p-1 md:p-2 mt-2 font-medium md:border-0 ">
             <li>
               <a
-                href="#"
+                href={`/nav/:id`}
                 className="block mb-4 py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
               >
                 {t("nav-name-1")} 
@@ -229,7 +229,7 @@ const TopNavbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href={`/navs/:id`}
                 className="block mb-4 py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
               >
                 {t("nav-name-2")} 
@@ -237,7 +237,7 @@ const TopNavbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href={`/navs/:id`}
                 className="block mb-4 py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
               >
                 {t("nav-name-3")} 
@@ -245,7 +245,7 @@ const TopNavbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href={`/navigate/:id`}
                 className="block mb-4 py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
               >
                {t("nav-name-4")} 
