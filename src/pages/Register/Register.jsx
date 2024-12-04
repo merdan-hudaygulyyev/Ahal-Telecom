@@ -28,7 +28,7 @@ const Register = () => {
         //   lastname: values.lastname, 
         //   email: values.email, 
         //   password: values.password
-        // })
+        // }) 
         // 2. const body = {
         //   name: values.name, 
         //   lastname: values.lastname, 
@@ -37,6 +37,8 @@ const Register = () => {
         // }
         const response = await RegisterFN({...values})
         if(response.success){
+          const token = response.token || "your-auth-token"; // Use real token from API
+          localStorage.setItem("token", token);
           resetForm()
           navigate('/', {replace: true})
         }
@@ -47,16 +49,16 @@ const Register = () => {
   });
 
   return (
-    <div className="bg-gradient-to-t from-blue-200 to-blue-300 font-[sans-serif]">
+    <div className="bg-[#1A3636] font-[sans-serif]">
       <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
         <div className="max-w-md w-full">
-          <div className="p-8 rounded-2xl bg-gradient-to-t  from-slate-100 to-slate-300 shadow">
+          <div className="p-8 rounded-2xl bg-green-100 shadow-md">
             <h2 className="text-gray-800 text-center text-2xl font-bold">
               Agza boluň
             </h2>
             <form className="mt-8 space-y-4" onSubmit={formik.handleSubmit}>
               <div>
-                <label className="text-gray-800 text-sm mb-2 block">Name</label>
+                <label className="text-gray-800 text-sm mb-2 block">Ady</label>
                 <div className="relative flex items-center">
                   <input
                     autoComplete="off"
@@ -64,14 +66,14 @@ const Register = () => {
                     name="name"
                     value={formik.values.name}
                     className="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
-                    placeholder="Enter name"
+                    placeholder="Adyňyzy giriziň"
                     onChange={formik.handleChange}
                   />
                 </div>
               </div>
               <div>
                 <label className="text-gray-800 text-sm mb-2 block">
-                  Lastname
+                  Familýasy
                 </label>
                 <div className="relative flex items-center">
                   <input
@@ -80,14 +82,14 @@ const Register = () => {
                     name="lastname"
                     value={formik.values.lastname}
                     className="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
-                    placeholder="Enter lastname"
+                    placeholder="Familýaňyzy giriziň"
                     onChange={formik.handleChange}
                   />
                 </div>
               </div>
               <div>
                 <label className="text-gray-800 text-sm mb-2 block">
-                  Email
+                E-poçta
                 </label>
                 <div className="relative flex items-center">
                   <input
@@ -96,7 +98,7 @@ const Register = () => {
                     name="email"
                     value={formik.values.email}
                     className="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
-                    placeholder="Enter email"
+                    placeholder="E-poçta giriziň"
                     onChange={formik.handleChange}
                   />
                 </div>
@@ -104,7 +106,7 @@ const Register = () => {
 
               <div>
                 <label className="text-gray-800 text-sm mb-2 block">
-                  Password
+                Parol
                 </label>
                 <div className="relative flex items-center">
                   <input
@@ -113,18 +115,22 @@ const Register = () => {
                     value={formik.values.password}
                     type="password"
                     className="w-full text-gray-800 text-sm border border-gray-300 px-4 py-3 rounded-md outline-blue-600"
-                    placeholder="Enter password"
+                    placeholder="Paroly giriziň"
                     onChange={formik.handleChange}
                   />
                 </div>
+                <a href="/login" 
+                 className="text-green-600 ml-44">
+                 Eýýäm giriş etdiňizmi ? Giriş
+                </a>
               </div>
 
               <div className="!mt-8">
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
+                  className="w-full py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-green-600 hover:bg-green-800  focus:outline-none"
                 >
-                  Login
+                  Giriş
                 </button>
               </div>
             </form>

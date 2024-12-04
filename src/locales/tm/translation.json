@@ -44,5 +44,60 @@
         "Mary": "Ahal Telekom, esasan Maryda işleýän kompaniýalar üçin hemra ulgamlaryna esaslanýan telekommunikasiýa çözgütlerini hödürleýär. Kabulda ýerleşýän tehniki hyzmatdaşlar bilen ähli Owganystanda hyzmatlar bermek. Ahal Telekom, Owganystandan hemra bilen baglanyşykly ähli enjamlary üpjün edip biler. “Ahal Telekom” -yň 2015-nji ýyla çenli Kabul, Kandahar, Bastion, Dwýer we Owganystanyň käbir beýleki welaýatlarynda işjeň terminallary bar.",
         "Dashoguz": "“Ahal Telekom” Daşoguzda işleýän kompaniýalar üçin esasanam hemra esasly telekommunikasiýa çözgütlerini hödürleýär. Yragyň we Demirgazyk Yragyň her nokadynda Erbil we Bagdatdaky tehniki toparlary bilen hyzmat edip biler. Sputnik interneti we VSAT birikmesi üçin zerur enjamlar Türkiýeden iberilip ýa-da ýerli Yrakdan satyn alnyp bilner. 2015-nji ýyla çenli Erbil, Dahok, Bagdat, Karbala we Basra ýaly şäherlerde işjeň hemra terminallary bar.",
         "Balkan": "“Ahal Telekom” esasan hemra esasly, Balkan kompaniýalary üçin ähli görnüşli telekommunikasiýa çözgütleri bilen üpjün edýär. “Ahal Telecom” -yň Liwiýa, Müsür, Nigeriýa, Mawritaniýa we Tanzaniýa ýaly ýurtlarda türk maýadarlary bar."
-    }
+    },
+    "nav-page-lists-1": "Ykdysady we çalt internet birikmesi.",
+    "nav-page-lists-2": "Ýönekeý gurnama, modem dakyň we oýnaň.",
+    "nav-page-lists-3": "Potensial talaplaryna görä üýtgeýän gapma-garşylyk gatnaşygy / baha saýlamalary.",
+    "nav-page-lists-4": "Telefon birikdirmek ukyby.",
+    "nav-page-lists-5": "Türkiýäniň hemme ýerinde.",
+    "nav-page-text-1": "KA topary Tx / Rx Antenna: 77 sm Ka antenna",
+    "nav-page-text-2": "Ka band TRIA: Hyzmatdaşlygyň özüni görkezmek ukyby bolan ykjam BUC we LNB bölümi",
+    "nav-page-text-3": "Modem: Ethernet interfeýsi bolan TOOWAY modemi 10 / 100Mbps",
+    "nav-page-2-text-1": "Hususy tor çözgüdi hemra arkaly köp nokatly nokatlary ýa-da nokatlary kesgitlemäge mümkinçilik berýär. Merkezleşdirilmedik nokadyň (mesh gurluşy) arasynda baglanyşyk bolup biler. Her nokat beýleki nokatlar bilen gönüden-göni tor gurluşynda habarlaşyp biler ",
+    "nav-page-2-text-2": "Müşderiniň talaplary bilen döredilen hemra birikmesi, TDMA ýa-da SCPC re modeiminde işläp biler. SCPC ýyldyz topologiýasy we uzakdan uzak bolmadyk tor üçin, TDMA mesh topologiýasy we uzak ýerlerden emele gelen tor üçin has ileri tutulýar. Sputnik birikmesiniň tizligi 64 Kbit / 30 Mbit aralygynda bolup biler.",
+    "nav-page-2-text-3": "VoIP we Wideo konferensiýasy ýaly köp sanly programma VSAT ulgamy tarapyndan dolandyrylyp bilner.",
+    "nav-page-2-text-4": "Hemra arkaly iki ýa-da birnäçe nokadyň arasynda ýokary hilli, hakyky wideo ýa-da ses geçirişi üpjün edilip bilner. Şeýlelik bilen dürli ýerlerdäki adamlar henizem ýygnak geçirip, şol bir ýerdäki ýaly çykyşlaryny we pikirlerini paýlaşyp bilerler (Wideo konferensiýa).",
+
+    "tooway-text-1": "Tooway, Eutelsat tarapyndan dolandyrylýan KA-SAT hemrasynda çalt we täsirli iki taraplaýyn hemra internet hyzmaty. Ahal Telekom, Tooway-yň 2008-nji ýyldan bäri Türkiýede ýurt paýlaýjysy.",
+    "tooway-text-2": "Tooway, müşderiniň isleglerine görä 22Mbit / 6 Mbit / s çenli dürli hyzmat paketlerini hödürleýär.",
+    "tooway-text-3": "“Tooway” hemra internet terminallary aşakdaky böleklerden durýar:",
+
+    "avanti-text-1": "“Avanti” hyzmaty, Angliýanyň operatory “Avanti” tarapyndan dolandyrylýan “Hylas-2” hemrasynda çalt we täsirli iki taraplaýyn hemra internet birikmesi. “Ahal Telekom” 2013-nji ýyldan bäri Türkiýede “Avanti” -niň ýurt paýlaýjysy.",
+    "avanti-text-2": "Müşderiniň isleglerine görä 15Mbit / 2,5 Mbit / s çenli dürli hyzmat paketlerini hödürleýän “Avanti” hyzmatlary.",
+    "avanti-text-3": "“Avanti” hemra internet terminallary aşakdaky böleklerden durýar:",
+
+    "thor7-text-1": "Telenor Ka band hyzmaty, Telenor tarapyndan dolandyrylýan Thor-7 hemrasynda çalt we täsirli iki taraplaýyn hemra internet birikmesi. Ahal Telekom, Türkiýedäki Telenor hyzmatlarynyň ýurt paýlaýjysy. ",
+    "thor7-text-2": "Müşderiniň isleglerine görä 15Mbit / 3 Mbit / s çenli dürli hyzmat paketlerini hödürleýän Telenor Ka band hyzmatlary.",
+    "thor7-text-3": "“Telenor Ka” hemra internet terminallary aşakdaky böleklerden durýar:",
+
+    "idirect-text-1": "“iDirect” hyzmaty esasan çalt we ygtybarly hemra internet birikmesine mätäç uly ofisler we kompaniýalar üçin. “Ahal Telekom”, iDirect platformasy arkaly umumy we hemra hemra internet hyzmatyny hödürleýär.",
+    "idirect-text-2": "Germaniýanyň Mýunhen şäherinde ýerleşýän teleportda Ku we C topar emeli hemralaryna gabat gelýän dürli antenalar bar.",
+    "idirect-text-3": "iDirect hemra internet terminallary aşakdaky böleklerden durýar:",
+
+    "scpc-text-1": "SCPC ýörite hemra internet hyzmaty, ýokary traffigi bolan we ýokary tizlikli we aýratyn internet aragatnaşygyna mätäç ofis / howly / zawod üçin iň oňat aragatnaşyk çözgüdi.",
+    "scpc-text-2": "Aýratyn hemra internet hyzmaty aýratyn kuwwaty ulanýandygy sebäpli, ähli internet programmalary ýokary öndürijilikde işläp biler.",
+    "scpc-text-3": "Adaty SCPC terminaly aşakdaky enjamlardan ybarat:",
+
+    "vsat-text": "“Ahal Telekom”, VSAT / Hususy hemra ulgamy çözgütleri arkaly hemra arkaly islendik maglumat geçirişini, ýapyk zynjyrly telefon we faks hyzmatyny üpjün edýär. Sputnik aragatnaşygynyň gurluşy dürli geografiki sebitlerde aňsatlyk bilen döredilip bilner",
+    "network-van-text": "Tooway, Eutelsat tarapyndan dolandyrylýan KA-SAT hemrasynda çalt we täsirli iki taraplaýyn hemra internet hyzmaty. Ahal Telekom, Tooway-yň 2008-nji ýyldan bäri Türkiýede ýurt paýlaýjysy.",
+    "telephone-text": "VOIP, Eutelsat tarapyndan dolandyrylýan Voip hemrasynda çalt we täsirli iki taraplaýyn hemra internet hyzmatydyr. Ahal Telekom, Tooway-yň 2009-njy ýyldan bäri Türkiýede ýurt paýlaýjysy.",
+
+    "turkey-text-1": "Ahal Telekom Türkiye içinde hemra hyzmatyny teklip etmeýär.",
+    "turkey-text-2": "Türk yurdynda ýerleşýän teleportda Ku we C topar emeli hemralaryna gabat gelýän dürli antenalar bar.",
+
+    "iraq-text-1": "2003-nji ýylda ABŞ-nyň gatyşmagyndan soň Yrak söwda işlerini üýtgedip we çaltlaşdyryp başlady. Türk materiallary we harytlary bazarlarda has gowy hilli; Türk kompaniýalarynyň artykmaçlyklary bar. Şeýlelik bilen, türk kompaniýalary, hünärli adam güýji sebäpli Yragy üýtgedip gurmakda has gowy rol oýnaýarlar.",
+    "iraq-text-2": "“Ahal Telekom” esasan Yrakda işleýän kompaniýalar üçin hemra ulgamlaryna esaslanýan telekommunikasiýa çözgütlerini hödürleýär. Erbil we Bagdatda ýerleşýän tehniki hyzmatdaşlar bilen Yragyň hemme ýerinde hyzmatlar bermek. Sputnik terminallary Türkiýeden iberilip, Yrakdan ýerli üpjün edilip bilner. “Ahal Telekom” -yň 2012-nji ýyla çenli Erbil, Duhok, Bagdat, Kerbela, Basra we Yrakdaky käbir welaýatlarynda işjeň terminallary bar.",
+
+    "libya-text-1": "1,8 million inedördül metr meýdany bilen Liwiýa dünýäde 17-nji we marketing boýunça 3-nji ýurtdyr. Afrikada 4-nji uly ýurt. 2011-nji ýylda Liwiýa daşary ýurt maýa goýumlary boýunça iň köp gyzyklanýan 10-njy ýurt boldy. Kaddafi hökümeti dargansoň, daşary ýurt kompaniýalary Liwiýanyň näbelliliginden peýdalanmak üçin ep-esli maýa goýýarlar.",
+    "libya-text-2": "Ahal Telekom, esasan Liwiýada işleýän kompaniýalar üçin hemra ulgamlaryna esaslanýan telekommunikasiýa çözgütlerini hödürleýär. Liwiýanyň töwereginde Bengazhi we Tripolide ýerleşýän tehniki hyzmatdaşlar bilen hyzmat etmek. “Ahal Telekom” Liwiýadan hemra bilen baglanyşykly enjamlary üpjün edip biler. Ahal Telekomyň 2015-nji ýyla çenli Bengazhi, Mistrata, Sabha, Waddan we Liwiýanyň käbir beýleki welaýatlarynda işjeň terminallary bar.",
+    
+    "afghanistan-text-1": "Uzak wagtlap dowam eden uruşlar sebäpli Owganystanda ýeterlik infrastruktura ýokdy. Çozuşdan ozal ruslar aňsat transport üçin ýollar gurupdyrlar, soň bolsa çozuşa başlaýarlar. Galan binalaryň, ýollaryň we infrastrukturanyň hemmesi ruslar tarapyndan ýasaldy. Galan binalar we desgalar ruslar yza gaýdyp gelende weýran boldy. Şol sebäpli ýurda infrastruktura, içerki ýaşaýyş jaýy, myhmanhanalar, durmuş desgalary we başgalar barada köp taslamalar gerek. Esasanam transport, energiýa, telekommunikasiýa, suwaryş we lagym ýaly esasy zerurlyklar ilkinji nobatda durýar.",
+    "afghanistan-text-2": "Şeýle-de bolsa, owgan hökümeti diňe gurluşyklar üçin gaty çäkli borçnamalar üçin býudjet dolandyryp bilýärdi. Hakykat; hatda ähli ýurtlar halkara tenderlerine gatnaşyp bilerdi, jemgyýetçilik guramalary we hökümet tenderleri üçin türk kompaniýalary ileri tutuldy. Şeýlelik bilen Owganystanyň durkuny täzelemekde türk kompaniýalarynyň uly goşandy bar; beýleki kompaniýalarda kömekçi potratçy hökmünde işlemekden başga-da, käbir tenderleri gönüden-göni gazanyp bilerler.",
+    "afghanistan-text-3": "Ahal Telekom, esasan Owganystanda işleýän kompaniýalar üçin hemra ulgamlaryna esaslanýan telekommunikasiýa çözgütlerini hödürleýär. Kabulda ýerleşýän tehniki hyzmatdaşlar bilen ähli Owganystanda hyzmatlar bermek. Ahal Telekom, Owganystandan hemra bilen baglanyşykly ähli enjamlary üpjün edip biler. “Ahal Telekom” -yň 2015-nji ýyla çenli Kabul, Kandahar, Bastion, Dwýer we Owganystanyň käbir beýleki welaýatlarynda işjeň terminallary bar.",
+
+    "turkmenistan-text-1": "Türkmenistan, prezident ulgamy bolan Gurbanguly Berdimuhammedowyň ýolbaşçylygyndaky we bitarap we garaşsyz ýurt. Hemişelik prezident saýlanandan soň Saparmurat (Niýazow) 2007-nji ýylyň 11-nji fewralynda aradan çykdy,% 89 işsizlik bilen Berdimuhammedow 5 ýyl prezident saýlandy.",
+    "turkmenistan-text-2": "Benzin we tebigy gaz ýaly energiýa çeşmeleri Türkmenistanda iň möhüm girdeji üpjün edýär. Mostlyurt esasan çöller bilen örtülen hem bolsa, ekerançylyk ýerleriniň ýarysy pagta üçin ulanylýar we bu Türkmenistany dünýäde pagta öndürijisi hökmünde öňdebaryjy edýär. Türk kompaniýalary bu bazara göz ýetirdiler we maýa goýýarlar. Bu türk kompaniýalary esasan energiýa, saglygy goraýyş, kagyz we azyk senagaty, syýahatçylyk, ulag, benzin, awtoulag senagaty, bank, bölek we dokma önümleri bilen gyzyklanýar. Esasanam türk kompaniýalary dokma senagatynda uly taslamalara ýolbaşçylyk etdiler we Türkmenistanda ýerli dokma usullaryny döwrebaplaşdyrdylar.",
+    "turkmenistan-text-3": "Dokma senagatyna maýa goýumlary bilen Türkmenistan ähli pagtany eksport edensoň konditer merkezine öwrüldi. Konditer önümleri Russiýa ýaly adaty bazarlara, ABŞ we Japanaponiýa ýaly çylşyrymly bazarlara satyldy.",
+
+    "europe-text-1": "“Ahal Telekom” esasan hemra esasly, Europeewropadaky kompaniýalar üçin ähli görnüşli telekommunikasiýa çözgütleri bilen üpjün edýär. “Ahal Telecom” -yň Bolgariýa, Rumyniýa, Albaniýa ýaly ýurtlarda işjeň terminallary bar."
 }

@@ -192,7 +192,7 @@ const Home = () => {
         </div>
         <div className='flex flex-col space-y-8 gap-10 mt-20 min-h-full w-full'>
             <div className='flex items-center gap-10 bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
-                <img src={teleImg} className='w-[30%] h-[30%] object-cover hidden mobile:block hover:scale-90 duration-300 transition-all'/>
+                <img src={teleImg} className='w-[30%] h-[30%] p-6 object-cover hidden mobile:block hover:scale-90 duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white'>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-1-head")}</h2>
                     <p className='break-all font-serif mb-16'>{t("solutions-card-1-text-1")}</p>
@@ -200,7 +200,7 @@ const Home = () => {
                 </div>
             </div>  
             <div className='flex bg-[#88C273] items-center gap-10 rounded-xl mx-5 shadow-xl p-2'>
-                <img src={teleImg_2} className='w-[30%] h-[30%] hidden mobile:block object-cover hover:scale-90 duration-300 transition-all'/>
+                <img src={teleImg_2} className='w-[30%] h-[30%] hidden mobile:block p-6 object-cover hover:scale-90 duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white'>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-2-head")}</h2>
                     <p className='break-all font-serif mb-16'>{t("solutions-card-2-text-1")}</p>
@@ -213,7 +213,7 @@ const Home = () => {
                     </ul>
                 </div>
             </div>  
-            <div className='flex items-center gap-10 bg-[#88C273] rounded-xl mx-5 shadow-xl p-2'>
+            <div className='flex items-center gap-10 bg-[#88C273] rounded-xl mx-5 shadow-xl p-6'>
                 <img src={teleImg_3} className='w-[30%] h-[30%] hidden mobile:block object-cover hover:scale-90  duration-300 transition-all'/>
                 <div className='pl-5 p-10 dark:text-white '>
                     <h2 className='text-2xl font-Outfit font-bold mb-16'>{t("solutions-card-3-head")}</h2>
@@ -225,13 +225,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-20 min-h-full w-full flex flex-col justify-center items-center dark:text-white gap-2'>
+      <div className='mt-20 min-h-full p-10 w-full dark:text-white gap-2'>
           <h2 className='text-4xl text-center font-Outfit font-bold mb-10'>{t("services")}</h2>
-          <div className='border w-[100px] border-gray-600 mb-10'></div>
-          <p className='break-all font-serif text-nowrap'>{t("services-head")}</p>
+          <p className='break-all text-center font-serif text-nowrap'>{t("services-head")}</p>
+          <div className='grid grid-cols-2 max-[1024px]:grid-cols-1 place-items-center gap-4'>
             {
                 countries.map((country) => (
-                  <div key={country.id} className='h-full w-full flex items-center mt-10 gap-2 shadow-xl p-12 bg-[#88C273] rounded-2xl'>
+                  <div key={country.id} className='h-full  max-w-[710px] max-[376px]:w-[280px] max-[426px]:w-[400px] mt-10 shadow-xl p-6 bg-[#88C273] rounded-2xl'>
                       <img src={airImg} className='w-16 h-16' />
                       <div className='flex flex-col justify-center gap-6 items-center pl-10'>
                           <h2 className='text-white dark:text-black text-2xl font-Outfit font-bold'>{t(`header.${country.key}`)}</h2>
@@ -243,6 +243,7 @@ const Home = () => {
                   </div>
                 ))
             }
+          </div>
       </div>
 
       <div className='mt-20 min-h-full w-full'>
@@ -252,15 +253,15 @@ const Home = () => {
               <form action="#" class="space-y-8">
                   <div>
                       <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{t("email")}</label>
-                      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your email" required />
+                      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required />
                   </div>
                   <div>
                       <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{t("subject")}</label>
-                      <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                      <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  required />
                   </div>
                   <div class="sm:col-span-2">
                       <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">{t("message")}</label>
-                      <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                      <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white  dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" ></textarea>
                   </div>
                   <button type="submit" class="py-3 px-5 text-sm font-medium bg-lime-500 text-center text-black dark:text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">{t('message-btn')}</button>
               </form>

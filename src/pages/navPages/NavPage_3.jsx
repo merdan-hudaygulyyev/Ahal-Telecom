@@ -3,10 +3,14 @@ import backImg from '../../assets/images/backImg.jpg'
 import { useParams } from 'react-router-dom'
 import { routes_3 } from '../../assets/routes/routes'
 import { GoArrowUp } from "react-icons/go";
+import { useTranslation } from "react-i18next";
+
 
 const NavPage_3 = () => {
   const {id} = useParams()
   const [data, setData] = useState(null)
+  const { t, i18n } = useTranslation();
+
 
   useEffect(() => {
     // const foundData = routes.find(route => route.id === +id)
@@ -40,9 +44,9 @@ const NavPage_3 = () => {
               {data?.head}
             </div>
             <div className='p-5 dark:text-white -mt-10'>
-              <p className='mb-6'>{data?.text_1}</p>
-              <p className='mb-6'>{data?.text_2}</p>
-              <p className='mb-6'>{data?.text_3}</p>
+              <p className='mb-6'>{t(data?.text_1)}</p>
+              <p className='mb-6'>{t(data?.text_2)}</p>
+              <p className='mb-6'>{t(data?.text_3)}</p>
             </div>
             <div className='flex justify-center'>
               <img src={data?.imgSrc} className='w-[900px] h-[500px] mb-6 border p-5 border-black dark:border-white rounded-2xl hover:bg-green-100 dark:hover:bg-green-400 duration-200'/>

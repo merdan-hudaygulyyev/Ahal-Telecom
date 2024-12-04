@@ -25,7 +25,7 @@ export function Footer() {
           <Typography variant="h5" className="mb-6 text-2xl text-lime-500">
             Ahal-Telecom
           </Typography>
-          <div className="grid grid-cols-3 justify-between gap-4">
+          {/* <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
                 <Typography
@@ -49,9 +49,9 @@ export function Footer() {
                 ))}
               </ul>
             ))}
-          </div>
+          </div> */}
         </div>
-        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+        <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-green-500 border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"

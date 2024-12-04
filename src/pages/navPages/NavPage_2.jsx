@@ -3,10 +3,13 @@ import backImg from '../../assets/images/backImg.jpg'
 import { useParams } from 'react-router-dom'
 import { GoArrowUp } from "react-icons/go";
 import { routes_2 } from '../../assets/routes/routes'
+import { useTranslation } from "react-i18next";
+
 
 const NavPage_2 = () => {
   const {id} = useParams()
   const [data, setData] = useState(null)
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     // const foundData = routes.find(route => route.id === +id)
@@ -40,11 +43,11 @@ const NavPage_2 = () => {
               {data?.head}
             </div>
             <div className='p-5 dark:text-white -mt-10'>
-              <p className='mb-6'>{data?.text_1}</p>
-              <p className='mb-6'>Private Network solution enables establishing point to point or point to multipoint connections via satellite. There could be connection between uncentralized point ( mesh structure) as well. Every single point can communicate with the other points directly in mesh structure.</p>
-              <p className='mb-6'>Satellite connection which has been established by the customer requirements, can work either TDMA or SCPC mode. SCPC is preferred for the star topology and for the network which has few remotes, while TDMA is preferred for the mesh topology and for the network which is formed by  many remote locations. The satellite connection speed can be in the range of  64Kbps – 30 Mbits.</p>
-              <p className='mb-6'>Many kind of applications such as VoIP and Video conference can be run by the VSAT system.</p>
-              <p className='mb-6'>High quality, real time video or voice transfer can be provided over satellite between two or multiple points. Thus the people on the different locations still can make meetings and share their presentations and ideas as they are in the same places (Video Conference).</p>
+              <p className='mb-6'>{t(data?.text_1)}</p>
+              <p className='mb-6'>{t('nav-page-2-text-1')}</p>
+              <p className='mb-6'>{t('nav-page-2-text-2')}</p>
+              <p className='mb-6'>{t('nav-page-2-text-3')}</p>
+              <p className='mb-6'>{t('nav-page-2-text-4')}</p>
             </div>
             <div className='flex justify-center'>
               <img src={data?.imgSrc} className='w-[400px] h-[400px] mb-6 border border-black dark:border-white rounded-2xl hover:bg-green-100 dark:hover:bg-green-400 duration-200'/>

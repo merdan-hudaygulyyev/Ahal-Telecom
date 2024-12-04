@@ -3,10 +3,13 @@ import backImg from '../../assets/images/backImg.jpg'
 import { useParams } from 'react-router-dom'
 import { routes } from '../../assets/routes/routes'
 import { GoArrowUp } from "react-icons/go";
+import { useTranslation } from "react-i18next";
 
 const NavPage = () => {
   const {id} = useParams()
   const [data, setData] = useState(null)
+  const { t, i18n } = useTranslation();
+  
   useEffect(() => {
     // const foundData = routes.find(route => route.id === +id)
     const foundData = routes.find(route => route.id === parseInt(id))
@@ -39,19 +42,19 @@ const NavPage = () => {
               {data?.head}
             </div>
             <div className='p-5 dark:text-white -mt-10'>
-              <p className='mb-6'>{data?.text_1}</p>
-              <p className='mb-6'>{data?.text_2}</p>
+              <p className='mb-6'>{t(data?.text_1)}</p>
+              <p className='mb-6'>{t(data?.text_2)}</p>
               <ul className='list-disc mb-10 p-5'>
-                <li>Economical and fast internet connection</li>
-                <li>Simple installation, plug and play modem</li>
-                <li>According to capacity requirement variable contention ratio/price choices</li>
-                <li>Telephony connection ability</li>
-                <li>Coverage all over Turkey</li>
+                <li>{t('nav-page-lists-1')}</li>
+                <li>{t('nav-page-lists-2')}</li>
+                <li>{t('nav-page-lists-3')}</li>
+                <li>{t('nav-page-lists-4')}</li>
+                <li>{t('nav-page-lists-5')}</li>
               </ul>
-              <p className='mb-6'>{data?.text_3}</p>
-              <p className='mb-6'>KA band Tx / Rx Antenna : 77cm Ka band antenna</p>
-              <p className='mb-6'>Ka band TRIA : Compact BUC and LNB unit with the cooperative self pointing ability</p>
-              <p className='mb-6'>Modem : 10/100Mbps <span>{data?.head}</span> modem  with ethernet interface</p>
+              <p className='mb-6'>{t(data?.text_3)}</p>
+              <p className='mb-6'>{t('nav-page-text-1')}</p>
+              <p className='mb-6'>{t('nav-page-text-2')}</p>
+              <p className='mb-6'>Modem : 10/100Mbps   <span>{data?.head}</span> {t('nav-page-text-3')}</p>
             </div>
             <div className='flex justify-center '>
               <img src={data?.imgSrc} className='w-[400px] h-[400px] mb-6 border border-black dark:border-white rounded-2xl hover:bg-green-100 dark:hover:bg-green-400 duration-200'/>

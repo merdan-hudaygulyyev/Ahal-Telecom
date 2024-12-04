@@ -44,5 +44,60 @@
             "Mary": "Ahal Telekom, is offering telecommunication solutions mainly based on satellite systems for the companies operating at Mary. Providing services at all Afghanistan with the technical partners located at Kabul. Ahal Telekom could provide all satellite related hardware from Afghanistan locally. Ahal Telekom has active terminals at Kabul, Kandahar, Bastion, Dwyer and some other provinces in Afghanistan as of year 2015.",
             "Dashoguz": "Ahal Telekom, Dashoguz faaliyet gösteren firmalar için başta uydu tabanli olmak üzere her türlü telekomünikasyon çözümünü sunmaktadir. Erbil ve Bağdat'ta bulunan teknik ekipleri ile Irak ve Kuzey Irak'ta her noktada hizmet verebilmektedir. Uydu internet ve VSAT bağlantisi için gerekli olan cihazlar Türkiye'den gönderilebileceği gibi, Irak içerisinden de lokal olarak temin edilebilmektedir. 2015 yili itibariyle Erbil, Dahok, Bagdat, Kerbela, Basra gibi şehirlerde aktif uydu terminalleri mevcuttur.",
             "Balkan": "Ahal Telekom provides mostly satellite based, all manner of telecommunication solutions for companies in Balkan. Ahal Telecom has active terminals in countries like Libya, Egypt, Nigeria, Mauritania and Tanzania which have Turkish investors."
-    }
+    },
+    "nav-page-lists-1": "Economical and fast internet connection.",
+    "nav-page-lists-2": "Simple installation, plug and play modem.",
+    "nav-page-lists-3": "According to capacity requirement variable contention ratio/price choices.",
+    "nav-page-lists-4": "Telephony connection ability.",
+    "nav-page-lists-5": "Coverage all over Turkey.",
+    "nav-page-text-1": "KA band Tx / Rx Antenna : 77cm Ka band antenna",
+    "nav-page-text-2": "Ka band TRIA : Compact BUC and LNB unit with the cooperative self pointing ability",
+    "nav-page-text-3": "Modem : 10/100Mbps TOOWAY modem with ethernet interface",
+    "nav-page-2-text-1": "Private Network solution enables establishing point to point or point to multipoint connections via satellite. There could be connection between uncentralized point ( mesh structure) as well. Every single point can communicate with the other points directly in mesh structure",
+    "nav-page-2-text-2": "Satellite connection which has been established by the customer requirements, can work either TDMA or SCPC mode. SCPC is preferred for the star topology and for the network which has few remotes, while TDMA is preferred for the mesh topology and for the network which is formed by  many remote locations. The satellite connection speed can be in the range of  64Kbps – 30 Mbits.",
+    "nav-page-2-text-3": "Many kind of applications such as VoIP and Video conference can be run by the VSAT system.",
+    "nav-page-2-text-4": "High quality, real time video or voice transfer can be provided over satellite between two or multiple points. Thus the people on the different locations still can make meetings and share their presentations and ideas as they are in the same places (Video Conference).",
+    
+    "tooway-text-1": "Tooway is a fast and efficient two way satellite internet service on the KA-SAT satellite which is managed by Eutelsat. Ahal Telekom is the country distributor of Tooway in Turkey since 2008.",
+    "tooway-text-2": "Tooway is offering different  service packages up to 22Mbps/6Mbps according to customer needs.",
+    "tooway-text-3": "The Tooway satellite internet terminals consist the following parts: ",
+
+    "avanti-text-1": "Avanti service is a fast and efficient two way satellite internet connection on the Hylas-2 satellite which is managed by UK operator Avanti. Ahal Telekom is the country distributor of Avanti in Turkey since 2013.",
+    "avanti-text-2": "Avanti services offering different  service packages up to 15Mbps/2.5Mbps according to customer needs.",
+    "avanti-text-3": "The Avanti satellite internet terminals consist the following parts: ",
+
+    "thor7-text-1": "Telenor Ka band service is a fast and efficient two way satellite internet connection on the Thor-7 satellite which is managed by Telenor. Ahal Telekom is the country distributor of Telenor services in Turkey. ",
+    "thor7-text-2": "Telenor Ka band services offering different  service packages up to 15Mbps/3Mbps according to customer needs.",
+    "thor7-text-3": "The Telenor Ka band satellite internet terminals consist the following parts: ",
+
+    "idirect-text-1": "iDirect service is mainly for big offices and corporates which need fast and reliable satellite internet connection. Ahal Telekom provides both shared and dedicated satellite internet service over iDirect platform.",
+    "idirect-text-2": "The teleport located at Munich, Germany has different antennas aligned to couple of Ku and C band satellites.",
+    "idirect-text-3": "iDirect satellite internet terminals consist the following parts:",
+
+    "scpc-text-1": "SCPC dedicated satellite internet service is the ideal communication solution for office/yard/factory which has high traffic profile and need high speed and dedicated internet communication.",
+    "scpc-text-2": "As  dedicated satellite internet service uses dedicated capacity , all internet applications can run at high performance.",
+    "scpc-text-3": "Typical SCPC terminal consists of following hardware: ",
+
+    "vsat-text": "Ahal Telekom provides any kind of data transfer, closed circuit phone & fax service over satellite by means of  VSAT / Private satellite network solutions. Satellite communication structure can be established easily in different geographical areas so it",
+    "network-van-text": "Tooway is a fast and efficient two way satellite internet service on the KA-SAT satellite which is managed by Eutelsat. Ahal Telekom is the country distributor of Tooway in Turkey since 2008.",
+    "telephone-text": "VOIP is a fast and efficient two way satellite internet service on the Voip satellite which is managed by Eutelsat. Ahal Telekom is the country distributor of Tooway in Turkey since 2009.",
+
+    "turkey-text-1": "Ahal Telekom does not offer satellite service within Türkiye.",
+    "turkey-text-2": "The teleport located at Turkish has different antennas aligned to couple of Ku and C band satellites.",
+
+    "iraq-text-1": "After the intervention of USA in 2003, Iraq has started to restructure and speed up their trading activities. Because of the Turkish materials and goods has better quality on the markets; the Turkish companies has benefits to be preferred. Thus the Turkish companies have better roles for the restructuring Iraq, because of their qualified man power.",
+    "iraq-text-2": "Ahal Telekom is offering telecommunication solutions mainly based on satellite systems for the companies operating at Iraq. Providing services on all over Iraq with the technical partners located at Erbil and Baghdad. Satellite terminals could be sent from Turkey and likely could be provided locally from Iraq. Ahal Telekom has active terminals at Erbil, Duhok, Baghdad, Kerbela, Basra and some other provinces in Iraq as of year 2012.",
+
+    "libya-text-1": "With the 1,8 million square meter area Libya is the 17th largest country and 3rd marketing target country on the World. 4th largest country at Africa. In 2011 Libya has been 10th most interested country about foreign investment. After break down of Kaddafi government, foreign companies are making significant investments to get benefit from the uncertain situation of Libya. ",
+    "libya-text-2": "Ahal Telekom, is offering telecommunication solutions mainly based on satellite systems for the companies operating at Libya. Providing services all around Libya with the technical partners located at Bengazhi and Tripoli. Ahal Telekom could provide all the satellite related hardware from Libya locally. Ahal Telekom has active terminals at Bengazhi, Mistrata, Sabha, Waddan and some other provinces in Libya as of year 2015.",
+    
+    "afghanistan-text-1": "Afghanistan did not have sufficient infrastructure because of the wars which continued for  long time. Before the invasion the Russians has built the roads for easy transportation then they start the invasion. All the remaining buildings, roads and infrastructures are made by the Russians. The remaining buildings and structures has been devastated when the Russians has set back. Because of this, the country needs many projects about infrastructures, domestic housing, hotels, social facilities and others. Especially the main needs like transportation, energy, telecommunications, irrigation and sewer needs to be done are the top priority. ",
+    "afghanistan-text-2": "However The Afghan Government, could only manage budget for a very limited commitments for constructions. The truth is; even all countries could participate in to international tenders, Turkish companies have been preferred for the NGO and government tenders. Thus the Turkish companies have a big contribution in reconstruction of Afghanistan; while they could win some tenders directly, besides they work for the other companies as subcontactors.",
+    "afghanistan-text-3": "Ahal Telekom, is offering telecommunication solutions mainly based on satellite systems for the companies operating at Afghanistan. Providing services at all Afghanistan with the technical partners located at Kabul. Ahal Telekom could provide all satellite related hardware from Afghanistan locally. Ahal Telekom has active terminals at Kabul, Kandahar, Bastion, Dwyer and some other provinces in Afghanistan as of year 2015.",
+
+    "turkmenistan-text-1": "Turkmenistan is a country which is headed by Gurbanguly Berdimuhammedov with presidential system and is neutral and independent. After elected perpetual president Saparmurat (Niyazov) died, on 11th February 2007, with %89 unaminity Berdimuhammedov elected as president for 5 years.",
+    "turkmenistan-text-2": "Energy resources such as petrol and natural gas, provide the most important income in Turkmenistan. Even though the country is mostly covered by deserts, half of the agriculture land is being used for cotton and this makes Turkmenistan the leader cotton manufacturer in the world. Turkish companies realized this market and have been making investments.These Turkish companies are mostly interested in energy, health care, paper and food industries, tourism, transportation, petrol, auto industry, banking, retail and textile. Especially Turkish companies have leaded big projects in textile industry and modernized the methods of local textile in Turkmenistan.",
+    "turkmenistan-text-3": "With textile industry investments Turkmenistan has been a confection center after years exporting all cotton. Confection products have been sold to traditional markets like Russia and also to sophisticated markets like U.S.A. and Japan. ",
+
+    "europe-text-1": "Ahal Telekom provides mostly satellite based, all manner of telecommunication solutions for companies in  Europe. Ahal Telecom has active terminals in countries like Bulgaria, Romania, Albania. "
 }

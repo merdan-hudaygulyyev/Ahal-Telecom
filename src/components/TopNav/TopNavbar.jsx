@@ -7,8 +7,8 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegMoon } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
-import { useState, useEffect } from "react";
-
+import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { routes, routes_3 } from '../../assets/routes/routes'
 import { routes_2 } from "../../assets/routes/routes";
@@ -34,10 +34,35 @@ const locales = [
 const TopNavbar = () => {
   const { t, i18n } = useTranslation();
   const [toggle, setToggle] = useState(false);
+
   const [show, setShow] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShow(false)
+      setShowContent(false)
+      setShowContent_2(false)
+      setShowContent_3(false)
+    }
+  };
+
+  useEffect(() => {
+    // Attach event listener when the component mounts
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+
   const [showContent, setShowContent] = useState(false)
   const [showContent_2, setShowContent_2] = useState(false)
   const [showContent_3, setShowContent_3] = useState(false)
+  const navigate = useNavigate();
+
   // Change language function
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -63,6 +88,11 @@ const TopNavbar = () => {
     }
   }, [darkMode]);
 
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Remove token
+    navigate("/login"); // Redirect to login
+  };
+
   return (
     <nav className="bg-[#C2FFC7] dark:bg-[#1A3636] fixed w-full z-20 top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -77,7 +107,7 @@ const TopNavbar = () => {
             <GrLanguage className="text-2xl hidden mobile:block text-lime-500 hover:text-lime-800 transition-all" />
           </button>
           {show && (
-            <div className="border absolute right-20 rounded-xl bg-green-50 top-[50px] h-[100px] w-[90px]">
+            <div ref={dropdownRef}  className="border absolute right-20 rounded-xl bg-green-50 top-[50px] h-[100px] w-[90px]">
               <div className="m-1 flex flex-col gap-2 font-Ovo p-0.5">
                 {locales.map((locale) => (
                   <li
@@ -101,6 +131,9 @@ const TopNavbar = () => {
           >
             {darkMode ? <IoSunnyOutline className="animate-spin_slow"/> : <FaRegMoon />}
           </button>
+          <button
+            onClick={handleLogout} 
+            className="bg-lime-500 p-2 rounded-xl max-[426px]:hidden text-white">Logout</button>
           <button onClick={() => {
             setToggle(!toggle)
             setShowContent(false)
@@ -112,9 +145,8 @@ const TopNavbar = () => {
         </div>
         <div  
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 max-[867px]:hidden mt-4 font-medium max-[768px]:hidden md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+          <ul ref={dropdownRef} className="flex flex-col p-4 md:p-0 max-[867px]:hidden mt-4 font-medium max-[768px]:hidden md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
             <li className="relative">
               <a
                 onClick={() => {
@@ -123,14 +155,14 @@ const TopNavbar = () => {
                   setShowContent_3(false)
                   setToggle(false)
                 }}
-                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
+                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700 cursor-pointer"
               >
                 {t("nav-name-1")} 
                 <span><IoIosArrowDown className={`${!showContent ? 'rotate-0 duration-200' : 'rotate-180 duration-200'}`}/></span>
               </a>
               {
                 showContent && (
-                  <div className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[200px] min-w-[200px] absolute top-12 -left-24">
+                  <div ref={dropdownRef} className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[200px] min-w-[200px] absolute top-12 -left-24">
                     {
                       routes.map((route) => (
                         <li key={route.id}>
@@ -152,15 +184,14 @@ const TopNavbar = () => {
                   setShowContent_3(false)
                   setToggle(false)
                 }}
-                href="#"
-                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
+                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700 cursor-pointer"
               >
                 {t("nav-name-2")} 
                 <span ><IoIosArrowDown className={`${!showContent_2 ? 'rotate-0 duration-200' : 'rotate-180 duration-200'}`}/></span>
               </a>
               {
                 showContent_2 && (
-                  <div className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[100px] min-w-[200px] absolute top-12 -left-24">
+                  <div ref={dropdownRef} className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[100px] min-w-[200px] absolute top-12 -left-24">
                       {
                         routes_2.map((route) => (
                           <li key={route.id}>
@@ -182,15 +213,14 @@ const TopNavbar = () => {
                 setShowContent(false)
                 setToggle(false)
               }}
-                href="#"
-                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
+                className="py-2 px-3 flex items-center gap-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700 cursor-pointer"
               >
                 {t("nav-name-3")} 
                 <span ><IoIosArrowDown className={`${!showContent_3 ? 'rotate-0 duration-200' : 'rotate-180 duration-200'}`}/></span>
               </a>
                 {
                   showContent_3 && (
-                    <div className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[100px] min-w-[200px] absolute top-12 -left-24">
+                    <div ref={dropdownRef} className="flex flex-col gap-3 p-3 rounded-md text-lime-500 font-bold items-center bg-green-100 dark:bg-lime-500 dark:text-white min-h-[100px] min-w-[200px] absolute top-12 -left-24">
                         {
                           routes_3.map((route) => (
                             <li key={route.id}>
@@ -207,7 +237,7 @@ const TopNavbar = () => {
             <li>
               <a
                 href="/contact"
-                className="py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700"
+                className="py-2 px-3 text-lg text-lime-500 rounded md:p-0 hover:text-lime-700 cursor-pointer"
               >
                 {t("nav-name-4")} 
               </a>
@@ -217,7 +247,7 @@ const TopNavbar = () => {
       </div>
       
       {toggle && (
-        <div className="min-w-full h-[230px] block laptop:hidden">
+        <div ref={dropdownRef} className="min-w-full h-[230px] block laptop:hidden">
           <ul className="flex flex-col items-center p-1 md:p-2 mt-2 font-medium md:border-0 ">
             <li>
               <a

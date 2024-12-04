@@ -8,14 +8,13 @@ import NavPage_2 from "./pages/navPages/NavPage_2";
 import NotFound from "./pages/404/NotFound";
 import Contact from "./pages/Contact/Contact";
 import NavPage_3 from "./pages/navPages/NavPage_3";
+import ProtectedRoute from "./ProtectedRoute";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
+  { 
+    path: "/register",
     element: (
-      <Layout>
-        <Home />
-      </Layout>
+        <Register />
     ),
   },
   {
@@ -25,17 +24,23 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/register",
+    path: "/",
     element: (
-        <Register />
+      <ProtectedRoute>
+        <Layout>
+          <Home />
+        </Layout>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/contact",
     element: (
-      <Layout>
-        <Contact />
-      </Layout>
+      <ProtectedRoute>
+        <Layout>
+          <Contact />
+        </Layout>
+      </ProtectedRoute>
     ),
   },
   {
@@ -47,25 +52,31 @@ const router = createBrowserRouter([
   {
     path: "/nav/:id",
     element: (
-      <Layout>
-        <NavPage />
-      </Layout>
+      <ProtectedRoute>
+        <Layout>
+          <NavPage />
+        </Layout>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/navs/:id",
     element: (
-      <Layout>
-        <NavPage_2 />
-      </Layout>
+      <ProtectedRoute>
+        <Layout>
+          <NavPage_2 />
+        </Layout>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/navigate/:id",
     element: (
-      <Layout>
-        <NavPage_3 />
-      </Layout>
+      <ProtectedRoute>
+        <Layout>
+          <NavPage_3 />
+        </Layout>
+      </ProtectedRoute>
     ),
   },
 ])
